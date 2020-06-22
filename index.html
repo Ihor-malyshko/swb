@@ -9,22 +9,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>home</title>
   <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
-  <link rel="stylesheet" href="./css/style-home.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <ul class="header__items">
-        <li class="header__item heade__item-logo">
-          <a href="/" class="logo">
+        <li class="header__item">
+          <a href="/" class="logo header__logo">
             <!-- <img src="" alt="Web Studio" role="presentation"> -->
-            Web Studio
+            Web <span class="logo__text">Studio</span>
           </a>
         </li>
-
-        <li class="header__item header__item-nav">
-          <nav class="nav">
+        <li class="header__item">
+          <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="" class="nav__link">Студия</a>
@@ -39,9 +38,8 @@
           </nav>
 
         </li>
-
-        <li class="head__item header-item-contact">
-          <ul class="contact">
+        <li class="header__item">
+          <ul class="contact header__contact">
             <li class="contact__item">
               <a href="mailto:info@devstudio.com" class="contact__link">
                 <!-- <svg class="contact__icon">
@@ -61,99 +59,127 @@
           </ul>
         </li>
       </ul>
-
     </div>
   </header>
 
   <main class="layaut">
 
-    <section class="layaut__sectiont">
+    <section class="layout__section">
       <div class="container hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <a href="" class="hero__link">Заказать услугу</a>
       </div>
     </section>
 
-    <section class="layaut__sectiont">
+    <section class="layout__section">
       <div class="container">
-        <h2>title</h2>
+        <h2 class="section__title visually-hidden">title</h2>
         <ul class="advantage">
           <li class="advantage__item">
             <svg class="advatage__svg"></svg>
-            <h3 class="advantege__title">Внимание к деталям</h3>
+            <p class="advantege__title">Внимание к деталям</p>
             <p class="advantage__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="advantage__item">
-            <svg class="advatage_svg"></svg>
-            <h3 class="advantege__title">Пунктуальность</h3>
+            <svg class="advatage__svg"></svg>
+            <p class="advantege__title">Пунктуальность</p>
             <p class="advantage__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
               собой.</p>
           </li>
           <li class="advantage__item">
-            <svg class="advatage_svg"></svg>
-            <h3 class="advantege__title">Планирование</h3>
+            <svg class="advatage__svg"></svg>
+            <p class="advantege__title">Планирование</p>
             <p class="advantage__text">Равным образом консультация с широким активом в значительной степени
               обуславливает.</p>
           </li>
           <li class="advantage__item">
             <svg class="advatage__svg"></svg>
-            <h3 class="advantege__title">Современные технологии</h3>
+            <p class="advantege__title">Современные технологии</p>
             <p class="advantage__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="layaut__sectiont">
-      <div class="container work">
-        <h2 class="work__title">Чем мы занимаемся</h2>
-        <ul class="work__list">
-          <li class="work__item">
-            <img src="" alt="" class="work__img">
-            <h3 class="work__name">Десктопные приложения</h3>
+    <section class="layout__section">
+      <div class="container">
+        <h2 class="section__title">Чем мы занимаемся</h2>
+        <ul class="preview-list">
+          <li class="preview-list__item">
+            <img src="" alt="" class="preview-list__img">
+            <h3 class="preview-list__name">Десктопные приложения</h3>
           </li>
-          <li class="work__item">
-            <img src="" alt="" class="work__img">
-            <h3 class="work__name">Мобильные приложения</h3>
+          <li class="preview-list__item">
+            <img src="" alt="" class="preview-list__img">
+            <h3 class="preview-list__name">Мобильные приложения</h3>
           </li>
-          <li class="work__item">
-            <img src="" alt="" class="work__img">
-            <h3 class="work__name">Дизайнерские решения</h3>
+          <li class="preview-list__item">
+            <img src="" alt="" class="preview-list__img">
+            <h3 class="preview-list__name">Дизайнерские решения</h3>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="layaut__sectiont">
-      <div class="container team">
-        <ul class="team">
-          <li class="team__item">
-            <h3 class="team_name">Николай Кучеренко</h3>
-            <p class="team text">Product Designer</p>
+    <section class="layout__section">
+      <div class="container container--bgc-grey">
+        <h2 class="section__title visually-hidden"></h2>
+        <ul class="card-list">
+          <li class="card-list__item">
+            <h3 class="card-list__name">Николай Кучеренко</h3>
+            <p class="card-list__text">Product Designer</p>
             <!-- social-list -->
-            <ul class="social__list">
-              <li class="social__link">in</li>
-              <li class="social__link">tv</li>
-              <li class="social__link">F</li>
-              <li class="social__link">in</li>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link" aria-hidden="is">
+                  is
+                  <svg class="social-list__icon">
+                    
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link" aria-hidden="tv">
+                  tv
+                  <svg class="social-list__icon">
+                    
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link" aria-hidden="Fb">
+                  Fb
+                  <svg class="social-list__icon">
+                    
+                  </svg>
+                </a>
+                </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link" aria-hidden="in">
+                  in
+                  <svg class="social-list__icon">
+                    
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="team__item">
-            <h3 class="team_name">Ольга Иванова</h3>
-            <p class="team text">Frontend Developer</p>
+          <li class="card-list__item">
+            <h3 class="card-list__name">Ольга Иванова</h3>
+            <p class="card-list__text">Frontend Developer</p>
             <!-- social-list -->
             <!-- to do -->
           </li>
-          <li class="team__item">
-            <h3 class="team_name">Андрей Шевченко</h3>
-            <p class="team text">Marketing</p>
+          <li class="card-list__item">
+            <h3 class="card-list__name">Андрей Шевченко</h3>
+            <p class="card-list__text">Marketing</p>
             <!-- social-list -->
             <!-- to do -->
           </li>
-          <li class="team__item">
-            <h3 class="team_name">Иван Николаев</h3>
-            <p class="team text">UI Designer</p>
+          <li class="card-list__item">
+            <h3 class="card-list__name">Иван Николаев</h3>
+            <p class="card-list__text">UI Designer</p>
             <!-- social-list -->
             <!-- to do -->
           </li>
@@ -161,28 +187,36 @@
       </div>
     </section>
 
-    <section class="layaut__sectiont">
-      <div class="container client">
-        <h2 class="client__title">Постоянные клиенты</h2>
-        <ul class="client__list">
-          <li class="client__item">
-            1
+    <section class="layout__section">
+      <div class="container">
+        <h2 class="layout__title">Постоянные клиенты</h2>
+        <ul class="link-list">
+          <li class="link-list__item">
+            <a href="" class="link-list__link" aria-hidden="name-company">
+              1
+              <svg class="link-list__icom">
+
+              </svg>
+            </a>
           </li>
-          <li class="client__item">
-            2
+          <li class="link-list__item">
+            <a href="" class="link-list__link" aria-hidden="name-company">
+              2
+              <svg class="link-list__icom">
+
+              </svg>
+            </a>
           </li>
-          <li class="client__item">
-            3
+          <li class="link-list__item">
+            <a href="" class="link-list__link" aria-hidden="name-company">
+              3
+              <svg class="link-list__icom">
+
+              </svg>
+            </a>
           </li>
-          <li class="client__item">
-            4
-          </li>
-          <li class="client__item">
-            5
-          </li>
-          <li class="client__item">
-            6
-          </li>
+          <!-- todo 4-6 -->
+
         </ul>
 
       </div>
@@ -190,40 +224,80 @@
 
   </main>
 
-  <footer>
-    <div class="address">
-      <a href="/" class="logo">
-        <!-- <img src="" alt="Web Studio" role="presentation"> -->
-        Web Studio
-      </a>
-      <address class="address">
-        <ul class="address__list">
-          <li class="address__item">
-            <a href="">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li class="address__item">
-            <a href="mailto:info@devstudio.com" class="address__link">
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="address__item">
-            <a href="tel:+380961111111" class="address__link">
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </address>
-    </div>
+  <footer class="page-footer">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <a href="/" class="logo page-footer__logo">
+          <!-- <img src="" alt="Web Studio" role="presentation"> -->
+          Web <span class="logo__text logo__text--inverse">Studio</span>
+        </a>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__link">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380961111111" class="address__link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </li>
 
-    <div class="social">
-      <p class="social__text">присоединяйтесь</p>
-      <ul class="social__list">
-        <li class="social__link">in</li>
-        <li class="social__link">tv</li>
-        <li class="social__link">F</li>
-        <li class="social__link">in</li>
-      </ul>
-    </div>
+      <li class="page-footer__item footer__item--social">
+          <p class="page-footer__title">присоединяйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item social-list__item--bgc-grey">
+              <a href="" class="social-list__link" aria-hidden="is">
+                is
+                <svg class="social-list__icon social-list__icon--white">
+                  
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item--bgc-grey">
+              <a href="" class="social-list__link" aria-hidden="tv">
+                tv
+                <svg class="social-list__icon social-list__icon--white">
+                  
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item--bgc-grey">
+              <a href="" class="social-list__link" aria-hidden="Fb">
+                Fb
+                <svg class="social-list__icon social-list__icon--white">
+                  
+                </svg>
+              </a>
+              </li>
+            <li class="social-list__item social-list__item--bgc-grey">
+              <a href="" class="social-list__link" aria-hidden="in">
+                in
+                <svg class="social-list__icon social-list__icon--white">
+                  
+                </svg>
+              </a>
+            </li>
+          </ul>          
+      </li>
+
+      <li class="page-footer__item">
+        <p class="page-footer__title"></p>
+        <p>bg</p>
+        <p>Подписаться</p>
+
+      </li>
+    </ul>
+
+
+
 
   </footer>
 
