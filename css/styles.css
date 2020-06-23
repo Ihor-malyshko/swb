@@ -1,4 +1,3 @@
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -8,4 +7,433 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* не понятно */
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  color: #757575;
+
+  background-color: #ffffff;
+}
+
+/* Header */
+
+.header {
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 85px;
+}
+
+.logo {
+  display: block;
+  font-family: "Raleway", "se";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #212121;
+}
+
+.logo__text {
+  color: #2196f3;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* todo */
+  /* узнать как это работает!! */
+  flex-grow: 1;
+}
+
+.header__item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  color: #212121;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #2196f3;
+}
+
+.header__contact {
+}
+
+.contact__list {
+  display: flex;
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Main */
+
+.layout__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.layout__section--no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.layout__section--bgc {
+  background: #f5f4fa;
+}
+
+.layout__container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.layout__title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: #212121;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff;
+  background-color: teal;
+}
+
+.hero__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Advantage */
+
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__item {
+  width: 270px;
+}
+
+.advantage__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage__icon {
+  margin-bottom: 30px;
+  width: inherit;
+  background-color: #f5f4fa;
+}
+
+.advantage__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: #212121;
+}
+
+/* Preview-list */
+
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preview-list__item {
+  width: 370px;
+  background: #f5f4fa;
+}
+
+.preview-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.preview-list__title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Card-list */
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.card-list__item {
+  width: 270px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card-list__container {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.card-list__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.card-list__text {
+  margin-bottom: 16px;
+}
+
+/* Link-list */
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-list__item {
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.link-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-list__icom {
+  width: 50px;
+  height: 50px;
+}
+
+/* Social-list */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Portfolio */
+
+.nav-card {
+  display: flex;
+  justify-content: center;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-bottom: 50px;
+}
+
+/* todo */
+/* переделать! */
+.nav-card__link {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-text-color);
+  background-color: var(--background-section);
+  font-family: inherit;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.card-set__item {
+  width: 370px;
+  margin: 15px;
+
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.card-set__container {
+  padding: 20px 24px;
+}
+
+.card-set__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.card-set__desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.card-set__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: teal;
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__text {
+  color: #ffffff;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
