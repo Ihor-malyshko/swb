@@ -539,7 +539,7 @@ body {
   color: var(--primary-color);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(105%);
   transition: transform 500ms var(--timing-function);
 }
 
