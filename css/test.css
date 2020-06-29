@@ -1,20 +1,16 @@
-:root {
-  --tab-size: 30px;
-}
-
 .container {
   width: 200px;
   height: 200px;
   outline: 3px solid teal;
 }
 
-.title {
-  color: tomato;
+.link {
+  text-decoration: none;
+  outline: 3px solid red;
 }
 
-.link {
-  font-style: none;
-  outline: 3px solid red;
+.title {
+  color: tomato;
 }
 
 .text {
@@ -23,87 +19,4 @@
 
 .container:hover .text {
   background-color: blue;
-}
-
-/* sadfasdf */
-
-.carts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-}
-
-.carts__item {
-  width: calc((100% - (2 * var(--tab-size))) / 3);
-}
-
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  margin: -5px;
-}
-
-.p-f__social .social__link {
-  background-color: green;
-  fill: orange;
-}
-
-.social__item {
-  padding: 5px;
-}
-
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 4px;
-  border-radius: 50%;
-  background-color: grey;
-  fill: currentColor;
-}
-
-.social__link:hover {
-  background-color: red;
-  fill: orange;
-}
-
-.social__icon {
-  width: 50%;
-  fill: inherit;
-}
-
-.client {
-  margin: -15px;
-}
-
-.client__item {
-  padding: 15px;
-}
-
-.client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: currentColor;
-}
-
-.client__link:hover {
-  border-color: lawngreen;
-  fill: lawngreen;
-}
-
-.client__icon {
-  height: 50%;
-  fill: inherit;
 }
