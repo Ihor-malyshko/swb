@@ -42,7 +42,7 @@
           <ul class="contact__list header__contact">
             <li class="contact__item">
               <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon" width="20px" height="20px">
+                <svg class="contact__icon">
                   <use href="./images/symbol-defs.svg#envelope"> </use>
                 </svg>
                 info@devstudio.com
@@ -50,7 +50,7 @@
             </li>
             <li class="contact__item">
               <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon" width="20px" height="20px">
+                <svg class="contact__icon">
                   <use href="./images/symbol-defs.svg#smartphone"> </use>
                 </svg>
                 +38 096 111 11 11
@@ -67,32 +67,31 @@
     <section class="hero">
       <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
       <button class="hero__button">Заказать услугу</button>
-      <!-- <a href="" class="hero__link">Заказать услугу</a> -->
     </section>
 
 
     <section class="layout__section .layout__section--no-gap-bottom">
       <div class="container">
-        <h2 class="layout__title visually-hidden">Advantage</h2>
-        <ul class="carts">
-          <li class="carts__item carts__item--four advantage__icon advantage__icon--antenna">
-            <p class="advantage__title">Внимание к деталям</p>
-            <p class="advantage__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+        <h2 class="layout__title visually-hidden">Features</h2>
+        <ul class="cards features">
+          <li class="cards__item cards__item--four-in-line features__icon features__icon--antenna">
+            <p class="features__title">Внимание к деталям</p>
+            <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="carts__item carts__item--four advantage__icon advantage__icon--clock">
-            <p class="advantage__title">Пунктуальность</p>
-            <p class="advantage__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+          <li class="cards__item cards__item--four-in-line features__icon features__icon--clock">
+            <p class="features__title">Пунктуальность</p>
+            <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
               собой.</p>
           </li>
-          <li class="carts__item carts__item--four advantage__icon advantage__icon--diagram">
-            <p class="advantage__title">Планирование</p>
-            <p class="advantage__text">Равным образом консультация с широким активом в значительной степени
+          <li class="cards__item cards__item--four-in-line features__icon features__icon--diagram">
+            <p class="features__title">Планирование</p>
+            <p class="features__text">Равным образом консультация с широким активом в значительной степени
               обуславливает.</p>
           </li>
-          <li class="carts__item carts__item--four advantage__icon advantage__icon--astronaut">
-            <p class="advantage__title">Современные технологии</p>
-            <p class="advantage__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          <li class="cards__item cards__item--four-in-line features__icon features__icon--astronaut">
+            <p class="features__title">Современные технологии</p>
+            <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </div>
@@ -101,22 +100,22 @@
     <section class="layout__section">
       <div class="container">
         <h2 class="layout__title">Чем мы занимаемся</h2>
-        <ul class="carts">
-          <li class="carts__item">
+        <ul class="cards">
+          <li class="cards__item">
             <div class="wrap">
-              <img src="./images/box.jpg" alt="Десктопные приложения" class="wrap__img">
+              <img src="./images/img_box1.jpg" alt="Десктопные приложения" class="img">
               <h3 class="wrap__title">Десктопные приложения</h3>
             </div>
           </li>
-          <li class="carts__item">
+          <li class="cards__item">
             <div class="wrap">
-              <img src="./images/img_box2.jpg" alt="Мобильные приложения" class="wrap__img">
+              <img src="./images/img_box2.jpg" alt="Мобильные приложения" class="img">
               <h3 class="wrap__title">Мобильные приложения</h3>
             </div>
           </li>
-          <li class="carts__item">
+          <li class="cards__item">
             <div class="wrap">
-              <img src="./images/img_box3.jpg" alt="Дизайнерские решения" class="wrap__img">
+              <img src="./images/img_box3.jpg" alt="Дизайнерские решения" class="img">
               <h3 class="wrap__title">Дизайнерские решения</h3>
             </div>
           </li>
@@ -127,157 +126,173 @@
     <section class="layout__section layout__section--bgc">
       <div class="container container--bgc-grey">
         <h2 class="layout__title">Наша команда</h2>
-        <ul class="card-list">
-          <li class="card-list__item">
-            <img src="./images/photo/person1.jpg" alt="Николай Кучеренко">
-            <div class="card-list__container">
-              <h3 class="card-list__title">Николай Кучеренко</h3>
-              <p class="card-list__text">Product Designer</p>
-              <!-- social-list -->
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="instagram link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="twitter link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="facebook link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="linkedin link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+        <ul class="cards">
+          <li class="cards__item cards__item--four-in-line">
+            <div class="person">
+              <div class="wrap">
+                <img src="./images/photo/person1.jpg" alt="Николай Кучеренко" class="img">
+              </div>
+              <div class="person__container">
+                <h3 class="person__title">Николай Кучеренко</h3>
+                <p class="person__text">Product Designer</p>
+                <!-- social-list -->
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="instagram link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="twitter link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="facebook link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="linkedin link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="card-list__item">
-            <img src="./images/photo/person2.jpg" alt="Ольга Иванова">
-            <div class="card-list__container">
-              <h3 class="card-list__title">Ольга Иванова</h3>
-              <p class="card-list__text">Frontend Developer</p>
-              <!-- social-list -->
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="instagram link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="twitter link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="facebook link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="linkedin link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <li class="cards__item cards__item--four-in-line">
+            <div class="person">
+              <div class="wrap">
+                <img src="./images/photo/person2.jpg" alt="Ольга Иванова" class="img">
+              </div>
+              <div class="person__container">
+                <h3 class="person__title">Ольга Иванова</h3>
+                <p class="person__text">Frontend Developer</p>
+                <!-- social-list -->
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="instagram link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="twitter link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="facebook link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="linkedin link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="card-list__item">
-            <img src="./images/photo/person3.jpg" alt="Андрей Шевченко">
-            <div class="card-list__container">
-              <h3 class="card-list__title">Андрей Шевченко</h3>
-              <p class="card-list__text">Marketing</p>
-              <!-- social-list -->
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="instagram link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="twitter link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="facebook link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="linkedin link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <li class="cards__item cards__item--four-in-line">
+            <div class="person">
+              <div class="wrap">
+                <img src="./images/photo/person3.jpg" alt="Андрей Шевченко" class="img">
+              </div>
+              <div class="person__container">
+                <h3 class="person__title">Андрей Шевченко</h3>
+                <p class="person__text">Marketing</p>
+                <!-- social-list -->
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="instagram link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="twitter link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="facebook link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="linkedin link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="card-list__item">
-            <img src="./images/photo/person4.jpg" alt="Иван Николаев">
-            <div class="card-list__container">
-              <h3 class="card-list__title">Иван Николаев</h3>
-              <p class="card-list__text">UI Designer</p>
-              <!-- social-list -->
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="instagram link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="twitter link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="facebook link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="" aria-label="linkedin link">
-                    <svg class="social-list__icon">
-                      <use href="./images/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <li class="cards__item cards__item--four-in-line">
+            <div class="person">
+              <div class="wrap">
+                <img src="./images/photo/person4.jpg" alt="Иван Николаев" class="img">
+              </div>
+              <div class="person__container">
+                <h3 class="person__title">Иван Николаев</h3>
+                <p class="person__text">UI Designer</p>
+                <!-- social-list -->
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="instagram link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="twitter link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="facebook link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="" aria-label="linkedin link">
+                      <svg class="social__icon">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -287,45 +302,45 @@
     <section class="layout__section">
       <div class="container">
         <h2 class="layout__title">Постоянные клиенты</h2>
-        <ul class="link-list">
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="45px" height="50px">
+        <ul class="cards">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="45px" height="50px">
                 <use href="./images/logo-client/symbol-defs.svg#logo1"></use>
               </svg>
             </a>
           </li>
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="40px" height="52px">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="40px" height="52px">
                 <use href="./images/logo-client/symbol-defs.svg#logo2"></use>
               </svg>
             </a>
           </li>
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="41px" height="43px">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="41px" height="43px">
                 <use href="./images/logo-client/symbol-defs.svg#logo3"></use>
               </svg>
             </a>
           </li>
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="80px" height="42px">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="80px" height="42px">
                 <use href="./images/logo-client/symbol-defs.svg#logo4"></use>
               </svg>
             </a>
           </li>
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="59px" height="47px">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="59px" height="47px">
                 <use href="./images/logo-client/symbol-defs.svg#logo5"></use>
               </svg>
             </a>
           </li>
-          <li class="link-list__item">
-            <a href="" class="link-list__link">
-              <svg class="link-list__icom" width="89px" height="46px">
+          <li class="cards__item cards__item--six-in-line">
+            <a href="" class="client__link">
+              <svg class="client__icom" width="89px" height="46px">
                 <use href="./images/logo-client/symbol-defs.svg#logo6"></use>
               </svg>
             </a>
@@ -368,31 +383,31 @@
         <li class="page-footer__item footer__item--social">
           <p class="page-footer__title">присоединяйтесь</p>
           <!-- social -->
-          <ul class="social-list page-footer__social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="instagram link">
-                <svg class="social-list__icon social-list__icon--white">
+          <ul class="social page-footer__social">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="instagram link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="twitter link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="twitter link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="facebook link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="facebook link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="linkedin link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="linkedin link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>

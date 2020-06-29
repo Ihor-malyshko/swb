@@ -33,7 +33,7 @@
                 <a href="./portfolio.html" class="nav__link nav__link--accent">Портфолио</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Контакты</a>
+                <a href="./test.html" class="nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -42,7 +42,7 @@
           <ul class="contact__list header__contact">
             <li class="contact__item">
               <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon" width="20px" height="20px">
+                <svg class="contact__icon">
                   <use href="./images/symbol-defs.svg#envelope"> </use>
                 </svg>
                 info@devstudio.com
@@ -50,7 +50,7 @@
             </li>
             <li class="contact__item">
               <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon" width="20px" height="20px">
+                <svg class="contact__icon">
                   <use href="./images/symbol-defs.svg#smartphone"> </use>
                 </svg>
                 +38 096 111 11 11
@@ -210,31 +210,31 @@
         <li class="page-footer__item footer__item--social">
           <p class="page-footer__title">присоединяйтесь</p>
           <!-- social -->
-          <ul class="social-list page-footer__social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="instagram link">
-                <svg class="social-list__icon social-list__icon--white">
+          <ul class="social page-footer__social">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="instagram link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="twitter link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="twitter link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="facebook link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="facebook link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--bgc-grey" href="" aria-label="linkedin link">
-                <svg class="social-list__icon social-list__icon--white">
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="linkedin link">
+                <svg class="social__icon">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
@@ -251,6 +251,13 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    const { height: pageHeaderHeigth } = document
+      .querySelector(".header")
+      .getBoundingClientRect();
+    document.body.style.paddingTop = `${pageHeaderHeigth}px`;
+  </script>
 
 </body>
 
