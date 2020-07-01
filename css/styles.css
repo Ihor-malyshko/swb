@@ -139,11 +139,16 @@ body {
   display: flex;
 }
 
+.nav__item {
+}
+
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .nav__link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -159,6 +164,19 @@ body {
 
 .nav__link--accent {
   color: var(--accent-color);
+}
+
+.nav__link--accent::after {
+  content: " ";
+
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contact__list {
@@ -252,9 +270,13 @@ body {
   color: var(--primary-color);
 }
 
-.hero__button {
+/* Button */
+
+.button {
   display: inline-block;
   padding: 10px 32px;
+  width: 200px;
+  height: 50px;
 
   font-weight: 700;
   font-size: 16px;
@@ -265,6 +287,19 @@ body {
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.button--icon::after {
+  content: "";
+
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icon_send.svg);
 }
 
 /* card set */
@@ -479,38 +514,37 @@ body {
   margin-bottom: 50px;
 }
 
-/* todo */
-/* переделать! */
 .nav-card__link {
+  display: inline-block;
+  height: 38px;
   margin-left: 4px;
   margin-right: 4px;
   padding: 6px 22px;
+
   border: none;
   border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--title-text-color);
-  background-color: var(--background-section);
+  color: var(--primary-title-color);
+  background-color: var(--primary-bgc);
   font-family: inherit;
 
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 }
 
-/* todo */
-/* не делал */
 .nav-card__link:hover,
 .nav-card__link:focus {
-  color: var(--accent-color);
-  background-color: teal;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
 }
 
 /* product */
 
 .product__link {
   display: block;
-  /* fill-opacity: 0; */
   border: 1px solid #eeeeee;
   box-shadow: none;
 
@@ -523,28 +557,33 @@ body {
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.product__text {
+.product__contains {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  padding: 24px;
-
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--primary-color);
-  background-color: rgba(33, 150, 243, 0.9);
-
+  padding: 30px 24px;
   transform: translateY(105%);
-  transition: transform 500ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
-.product__link:hover .product__text,
-.product__link:focus .product__text {
+.product__text {
+  /* to do */
+  /* центрировать текст по вертикали */
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-color);
+}
+
+.product__link:hover .product__contains,
+.product__link:focus .product__contains {
   transform: translateY(0%);
 }
 
@@ -601,6 +640,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.address__link:hover {
+  color: var(--accent-color);
+}
+
 .page-footer__title {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -613,4 +656,199 @@ body {
 
 .page-footer__social-list {
   width: 206px;
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  width: 570px;
+}
+
+.footer__input {
+  flex-grow: 1;
+  margin-right: 10px;
+  height: 50px;
+  padding: 15px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Form */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100px; */
+  /* height: 100px; */
+
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 1000ms var(--timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1000ms var(--timing-function);
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  padding: 40px;
+
+  background-color: var(--primary-color);
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--primary-title-color);
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form__field--min-mb {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+
+  color: var(--primary-text-color);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  color: var(--primary-text-color);
+}
+
+.form__textarea + .form__label {
+  top: 16px;
+  left: 16px;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+
+  width: 13px;
+  height: 13px;
+}
+
+.form__icon--width {
+  width: 15px;
+}
+
+.form__textarea {
+  padding: 13px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.form__link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  top: -4px;
+  left: 16px;
+  transform: translateY(-100%);
+  color: var(--accent-color);
+}
+
+/* .form__input:not(:focus) + .form__label {
+  color: var(--primary-text-color);
+} */
+
+.form__input:focus ~ .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__textarea:focus + .form__label,
+.form__textarea:not(:placeholder-shown) + .form__label {
+  top: -4px;
+  left: 16px;
+  transform: translateY(-100%);
+  color: var(--accent-color);
+}
+
+.form__textarea:focus ~ .form__icon,
+.form__textarea:not(:placeholder-shown) ~ .form__icon {
+  fill: var(--accent-color);
+}
+
+/* to do */
+.form__checkbox {
+  /* Оригинальный чекбокс о принятии лицензионного соглашения в форме заявки скрыт, а его визуальное оформление сделано вручную, при помощи псевдоэлемента и векторного изображения галочки. */
+  /* Когда инпут получает фокус, иконка в нём меняет цвет на основной цвет акцента. */
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--primary-title-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.button-close:hover {
+  fill: var(--accent-color);
+}
+
+.button-close__icon {
+  width: 11px;
+  height: 11px;
 }

@@ -66,7 +66,7 @@
 
     <section class="hero">
       <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
-      <button class="hero__button">Заказать услугу</button>
+      <button class="button" data-modal-open>Заказать услугу</button>
     </section>
 
 
@@ -140,28 +140,28 @@
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="instagram link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#instagram"></use>
+                        <use xlink:href="./images/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="twitter link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#twitter"></use>
+                        <use xlink:href="./images/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="facebook link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#facebook"></use>
+                        <use xlink:href="./images/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="linkedin link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                        <use xlink:href="./images/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -417,21 +417,83 @@
 
         <li class="page-footer__item">
           <p class="page-footer__title">Подпишитесь на рассылку</p>
-          <p>bg</p>
-          <p>Подписаться</p>
+          <form class="footer__form">
+            <input type="email" class="footer__input" name="mail" id="mail" placeholder="E-mail">
+            <button class="button button--icon">Подписаться</button>
+          </form>
 
         </li>
       </ul>
     </div>
   </footer>
 
+  <!-- <div class="backdrop">
+    <form action="" class="modal">
+      <p class=" modal-title">text</p>
+      <input type="text" class="input">
+      <input type="text" class="input">
+      <input type="text" class="input">
+    </form>
+  </div> -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="button-close" data-modal-close>
+        <svg class="button-close__icon">
+          <use href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="form">
+
+        <div class="form__field">
+          <input type="text" class="form__input" name="name" id="name" placeholder=" " />
+          <label for="name" class="form__label">Имя</label>
+          <svg class="form__icon">
+            <use href="./images/symbol-defs.svg#name"></use>
+          </svg>
+        </div>
+
+        <div class="form__field">
+          <input type="tel" class="form__input" name="tel" id="tel" placeholder=" " />
+          <label for="tel" class="form__label">Телефон</label>
+          <svg class="form__icon">
+            <use href="./images/symbol-defs.svg#tel"></use>
+          </svg>
+        </div>
+
+        <div class="form__field">
+          <input type="email" class="form__input" name="mail" id="mail" placeholder=" " />
+          <label for="mail" class="form__label">Почта</label>
+          <svg class="form__icon form__icon--width">
+            <use href="./images/symbol-defs.svg#mail"></use>
+          </svg>
+        </div>
+
+        <div class="form__field form__field--min-mb">
+          <textarea class="form__textarea" name="comment" id="comment" placeholder=" "></textarea>
+          <label for="comment" class="form__label">Комментарий</label>
+        </div>
+
+        <div class="form__field ">
+          <input type="checkbox" class="form__checkbox" name="policy" value="policy" id="policy">
+          <label for="policy">Соглашаюсь с рассылкой и принимаю </label>
+          <a href="" class="form__link">Условия договора</a>
+        </div>
+
+        <button type="submit" class="form__button button">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="./js/modal.js"></script>
   <script>
     const { height: pageHeaderHeigth } = document
       .querySelector(".header")
       .getBoundingClientRect();
     document.body.style.paddingTop = `${pageHeaderHeigth}px`;
   </script>
-
 </body>
 
 </html>

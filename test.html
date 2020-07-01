@@ -12,32 +12,59 @@
   <link rel="stylesheet" href="./css/test.css" />
 </head>
 
-<body style="margin: 50px; border: turquoise solid 5px;">
+<body style="margin: 50px;">
 
-  <a href="./index.html" class="nav__link nav__link--accent" style="margin: 50px; background-color: teal;">Студия</a>
+  <a href="./index.html" class="nav__link nav__link--accent" style="display: block; margin: 50px;">Студия</a>
 
-  <div style="border: tomato solid 5px;">line</div>
+  <div class="form__container">
+    <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+    <form class="form">
+      <button class="button-exit">
+        <img src="./images/exit.svg" alt="">
+      </button>
+      <!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
 
-  <!-- some -->
+      <div class="form__field">
+        <input type="text" class="form__input" name="name" id="name" placeholder=" " />
+        <label for="name" class="form__label">Имя</label>
+        <svg class="form__icon">
+          <use href="./images/symbol-defs.svg#name"></use>
+        </svg>
+      </div>
 
-  <div style="border: olivedrab solid 5px;">line</div>
+      <div class="form__field">
+        <input type="tel" class="form__input" name="tel" id="tel" placeholder=" " />
+        <label for="tel" class="form__label">Телефон</label>
+        <svg class="form__icon">
+          <use href="./images/symbol-defs.svg#tel"></use>
+        </svg>
+      </div>
 
-  <!-- some -->
+      <div class="form__field">
+        <input type="email" class="form__input" name="mail" id="mail" placeholder=" " />
+        <label for="mail" class="form__label">Почта</label>
+        <svg class="form__icon">
+          <use href="./images/symbol-defs.svg#mail"></use>
+        </svg>
+      </div>
 
-  <div style="border: orange solid 5px;">line</div>
+      <div class="form__field">
+        <textarea class="form__textarea" name="comment" id="comment" placeholder=" "></textarea>
+        <label for="comment" class="form__label">Комментарий</label>
+      </div>
 
-  <!-- some -->
+      <div class="form__wrap">
+        <input type="checkbox" name="policy" value="policy" id="policy">
+        <label for="policy">Соглашаюсь с рассылкой и принимаю </label>
+        <a href="" class="form__link">Условия договора</a>
+      </div>
 
-  <div class="container">
-    <a href="" class="link">
-      <h2 class="title">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto.
-      </h2>
-      <p class="text">
-        Lorem ipsum dolor sit amet.
-      </p>
-    </a>
+      <button type="submit" class="form__button button">Отправить</button>
+    </form>
   </div>
+
+
+
 </body>
 
 </html>
