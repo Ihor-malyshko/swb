@@ -823,9 +823,32 @@ body {
 }
 
 /* to do */
-.form__checkbox {
-  /* Оригинальный чекбокс о принятии лицензионного соглашения в форме заявки скрыт, а его визуальное оформление сделано вручную, при помощи псевдоэлемента и векторного изображения галочки. */
-  /* Когда инпут получает фокус, иконка в нём меняет цвет на основной цвет акцента. */
+.checkbox {
+  -webkit-appearance: none;
+}
+
+.checkbox__icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  border: 1px solid var(--primary-title-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked + .checkbox__icon {
+  background-image: url(../images/icon-check.svg);
+  /* fill: #ffffff; */
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: transparent;
+}
+
+.checkbox__label {
+  padding-left: 36px;
 }
 
 .form__button {
