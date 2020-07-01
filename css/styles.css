@@ -822,12 +822,12 @@ body {
   fill: var(--accent-color);
 }
 
-/* to do */
 .checkbox {
   -webkit-appearance: none;
 }
 
-.checkbox__icon {
+.checkbox__label::before {
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -835,13 +835,14 @@ body {
   left: 12px;
   transform: translateY(-50%);
 
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid var(--primary-title-color);
   border-radius: 4px;
 }
 
-.checkbox:checked + .checkbox__icon {
+.checkbox:checked + .checkbox__label::before {
   background-image: url(../images/icon-check.svg);
-  /* fill: #ffffff; */
   background-color: var(--accent-color);
   background-origin: border-box;
   border-color: transparent;
