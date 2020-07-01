@@ -559,7 +559,7 @@ body {
 
 .product__contains {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   overflow: auto;
 
   position: absolute;
@@ -567,7 +567,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 30px 24px;
+  padding: 0 24px;
   transform: translateY(105%);
   transition: transform 250ms var(--timing-function);
 
@@ -577,6 +577,8 @@ body {
 .product__text {
   /* to do */
   /* центрировать текст по вертикали */
+  margin: auto 0;
+  padding: 10px 0;
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-color);
@@ -684,33 +686,35 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  /* width: 100px; */
-  /* height: 100px; */
+  z-index: 2;
 
-  z-index: 10;
-
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 
   opacity: 1;
-  transition: opacity 1000ms var(--timing-function);
+  transition: visibility 1000ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   transition: opacity 1000ms var(--timing-function);
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
   padding: 40px;
-
   background-color: var(--primary-color);
+
+  transition: transform 250ms var(--timing-function) 250ms;
 }
 
 .modal__title {
@@ -744,10 +748,6 @@ body {
   border-radius: 4px;
 }
 
-.form__input:focus {
-  border: 1px solid var(--accent-color);
-}
-
 .form__label {
   position: absolute;
   top: 50%;
@@ -755,6 +755,18 @@ body {
   transform: translateY(-50%);
 
   color: var(--primary-text-color);
+
+  transition: top 250ms var(--timing-function),
+    left 250ms var(--timing-function), transform 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  top: -4px;
+  left: 16px;
+  transform: translateY(-100%);
+  color: var(--accent-color);
 }
 
 .form__textarea + .form__label {
@@ -777,28 +789,20 @@ body {
 }
 
 .form__textarea {
+  display: block;
   padding: 13px 16px;
   width: 100%;
   height: 120px;
   resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .form__link {
   color: var(--accent-color);
   text-decoration: underline;
 }
-
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
-  top: -4px;
-  left: 16px;
-  transform: translateY(-100%);
-  color: var(--accent-color);
-}
-
-/* .form__input:not(:focus) + .form__label {
-  color: var(--primary-text-color);
-} */
 
 .form__input:focus ~ .form__icon {
   fill: var(--accent-color);
