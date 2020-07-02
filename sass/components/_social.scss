@@ -1,0 +1,42 @@
+/* social */
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  padding: 5px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 4px;
+  border-radius: 50%;
+
+  background-color: inherit;
+  fill: $icon-color;
+
+  transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $accent-color;
+  fill: $primary-color;
+}
+
+.social__icon {
+  width: 50%;
+  fill: inherit;
+}

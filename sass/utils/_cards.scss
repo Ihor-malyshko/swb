@@ -1,0 +1,26 @@
+/* card set */
+
+.cards {
+  /* outline: teal solid 3px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -$tab-size;
+
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  /* position: relative; */
+  padding: $tab-size;
+  width: calc(100% / 3);
+}
+
+.cards__item--four-in-line {
+  width: calc(100% / 4);
+}
+
+.cards__item--six-in-line {
+  width: calc(100% / 6);
+}

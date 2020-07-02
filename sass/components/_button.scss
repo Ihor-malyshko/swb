@@ -1,0 +1,31 @@
+/* Button */
+
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $primary-color;
+  background-color: $accent-color;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button--icon::after {
+  content: "";
+
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icon_send.svg);
+}

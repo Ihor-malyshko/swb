@@ -1,0 +1,25 @@
+/* Сlient */
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 4px;
+
+  border-color: $icon-color;
+  fill: $icon-color;
+
+  transition: border-color 250ms $timing-function, fill 250ms $timing-function;
+}
+
+.client__link:hover,
+.client__link:focus {
+  border-color: $accent-color;
+  fill: $accent-color;
+}
+
+.client__icom {
+  fill: inherit;
+}

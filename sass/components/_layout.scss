@@ -1,0 +1,26 @@
+/* Main */
+
+.layout__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.layout__section--no-gap-bottom {
+  padding-bottom: 0;
+}
+
+.layout__section--bgc-grey {
+  background: $second-bgc;
+}
+
+.layout__title {
+  /* outline: red solid 3px; */
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: $primary-title-color;
+}

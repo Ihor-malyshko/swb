@@ -1,0 +1,65 @@
+/* product */
+
+.product__link {
+  display: block;
+  border: 1px solid #eeeeee;
+  box-shadow: none;
+
+  transition: box-shadow 250ms $timing-function;
+}
+
+.product__link:hover,
+.product__link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.product__contains {
+  display: flex;
+  /* align-items: center; */
+  overflow: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  transform: translateY(105%);
+  transition: transform 250ms $timing-function;
+
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.product__text {
+  /* to do */
+  /* центрировать текст по вертикали */
+  margin: auto 0;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $primary-color;
+}
+
+.product__link:hover .product__contains,
+.product__link:focus .product__contains {
+  transform: translateY(0%);
+}
+
+.product__container {
+  padding: 20px 24px;
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: $primary-title-color;
+}
+
+.product__desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
