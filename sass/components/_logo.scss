@@ -6,8 +6,8 @@
   font-size: 26px;
   line-height: 1.17;
   color: $primary-title-color;
-}
 
-.logo__text {
-  color: $accent-color;
+  &__text {
+    color: $accent-color;
+  }
 }

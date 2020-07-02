@@ -2,74 +2,54 @@
 
 .page-footer {
   background-color: $footer-bgc;
-}
 
-.page-footer__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-.page-footer__logo {
-  margin-bottom: 20px;
-  color: $primary-color;
-}
+  &__logo {
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
 
-.address {
-  font-style: normal;
-}
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+  }
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+  &__social-list {
+    width: 206px;
+  }
 
-.address__text {
-  color: $primary-color;
-}
+  &__social .social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $primary-color;
+  }
 
-.address__link {
-  color: rgba(255, 255, 255, 0.6);
-}
+  &__form {
+    display: flex;
+    align-items: center;
+    width: 570px;
+  }
 
-.address__link:hover {
-  color: $accent-color;
-}
-
-.page-footer__title {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: $primary-color;
-}
-
-.page-footer__social-list {
-  width: 206px;
-}
-
-.page-footer__social .social__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: $primary-color;
-}
-
-.footer__form {
-  display: flex;
-  align-items: center;
-  width: 570px;
-}
-
-.footer__input {
-  flex-grow: 1;
-  margin-right: 10px;
-  height: 50px;
-  padding: 15px;
-  color: $primary-color;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  &__input {
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 50px;
+    padding: 15px;
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }

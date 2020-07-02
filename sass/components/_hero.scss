@@ -18,13 +18,13 @@
 
   text-align: center;
   letter-spacing: 0.06em;
-}
 
-.hero__title {
-  margin-bottom: $tab-size * 2;
+  &__title {
+    margin-bottom: $tab-size * 2;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: $primary-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: $primary-color;
+  }
 }
