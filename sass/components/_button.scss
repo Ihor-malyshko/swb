@@ -6,6 +6,7 @@
   padding: 10px 32px;
   width: 200px;
   height: 50px;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 16px;
@@ -16,18 +17,17 @@
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
+  &__icon::after {
+    content: "";
 
-.button__icon::after {
-  content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
 
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  vertical-align: middle;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/icon_send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/icon_send.svg);
+  }
 }

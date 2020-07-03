@@ -7,6 +7,11 @@
   line-height: 1.17;
   color: $primary-title-color;
 
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+
   @media screen and (max-width: $tablet) {
     padding: 16px;
   }

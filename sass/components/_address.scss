@@ -1,5 +1,9 @@
 .address {
   font-style: normal;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 9px;

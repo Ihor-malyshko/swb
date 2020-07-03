@@ -2,6 +2,16 @@
 
 .page-footer {
   background-color: $footer-bgc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__wrap {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
 
   &__list {
     display: flex;
@@ -11,20 +21,23 @@
     }
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
     margin: -30px auto;
     @media screen and (min-width: $desktop) {
-      margin: 0 auto;
+      margin: 0;
     }
   }
   &__item {
     margin: 30px auto;
     @media screen and (min-width: $desktop) {
-      margin: 0 auto;
+      margin: 0;
     }
   }
-
+  &__item:first-child {
+    @media screen and (min-width: $desktop) {
+      margin-right: 70px;
+    }
+  }
   &__logo {
     margin-bottom: 20px;
     color: $primary-color;
@@ -32,6 +45,11 @@
 
   &__title {
     margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      text-align: start;
+    }
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -51,13 +69,19 @@
 
   &__form {
     display: flex;
-    align-items: center;
-    width: 570px;
+    flex-direction: column;
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
   }
 
   &__input {
     flex-grow: 1;
-    margin-right: 10px;
+    margin-bottom: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     height: 50px;
     padding: 15px;
     color: $primary-color;
@@ -65,5 +89,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    width: 450px;
+
+    @media screen and (min-width: $desktop) {
+      width: 350px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
   }
 }
