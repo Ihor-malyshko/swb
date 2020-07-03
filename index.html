@@ -22,43 +22,45 @@
         <!-- <img src="" alt="Web Studio" role="presentation"> -->
         <span class="logo__text">Web</span> Studio
       </a>
-      <ul class="header__list">
-        <li class="header__item">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link nav__link--accent">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a href="./test/test.html" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </li>
-        <li class="header__item">
-          <ul class="contact__list header__contact">
-            <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon">
-                  <use href="./images/symbol-defs.svg#envelope"> </use>
-                </svg>
-                info@devstudio.com
-              </a>
+      <button type="button" class="menu__button" data-menu-button>
+        <svg width="40" height="40">
+          <use class="icon__cross" href="./images/symbol-defs.svg#cross"> </use>
+          <use class="icon__menu" href="./images/symbol-defs.svg#menu"> </use>
+        </svg>
+      </button>
+      <div class="menu" data-menu>
+        <nav class="menu__item nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--accent">Студия</a>
             </li>
-            <li class="contact__item">
-              <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon">
-                  <use href="./images/symbol-defs.svg#smartphone"> </use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="./test/test.html" class="nav__link">Контакты</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </nav>
+        <ul class="menu__item contact__list">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#envelope"> </use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#smartphone"> </use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -70,26 +72,26 @@
     </section>
 
 
-    <section class="layout__section layout__section--no-gap-bottom">
+    <section class="layout__section">
       <div class="container">
         <h2 class="layout__title visually-hidden">Features</h2>
         <ul class="cards features">
-          <li class="cards__item cards__item--four-in-line features__icon features__icon--antenna">
+          <li class="cards__item features__icon features__icon--antenna">
             <p class="features__title">Внимание к деталям</p>
             <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="cards__item cards__item--four-in-line features__icon features__icon--clock">
+          <li class="cards__item features__icon features__icon--clock">
             <p class="features__title">Пунктуальность</p>
             <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
               собой.</p>
           </li>
-          <li class="cards__item cards__item--four-in-line features__icon features__icon--diagram">
+          <li class="cards__item features__icon features__icon--diagram">
             <p class="features__title">Планирование</p>
             <p class="features__text">Равным образом консультация с широким активом в значительной степени
               обуславливает.</p>
           </li>
-          <li class="cards__item cards__item--four-in-line features__icon features__icon--astronaut">
+          <li class="cards__item features__icon features__icon--astronaut">
             <p class="features__title">Современные технологии</p>
             <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -97,23 +99,23 @@
       </div>
     </section>
 
-    <section class="layout__section">
+    <section class="layout__section layout__section--no-gap-top layout__section--only-desktop">
       <div class="container">
         <h2 class="layout__title">Чем мы занимаемся</h2>
         <ul class="cards">
-          <li class="cards__item">
+          <li class="cards__item cards__item--three">
             <div class="wrap">
               <img src="./images/img_box1.jpg" alt="Десктопные приложения" class="img">
               <h3 class="wrap__title">Десктопные приложения</h3>
             </div>
           </li>
-          <li class="cards__item">
+          <li class="cards__item cards__item--three">
             <div class="wrap">
               <img src="./images/img_box2.jpg" alt="Мобильные приложения" class="img">
               <h3 class="wrap__title">Мобильные приложения</h3>
             </div>
           </li>
-          <li class="cards__item">
+          <li class="cards__item cards__item--three">
             <div class="wrap">
               <img src="./images/img_box3.jpg" alt="Дизайнерские решения" class="img">
               <h3 class="wrap__title">Дизайнерские решения</h3>
@@ -127,7 +129,7 @@
       <div class="container container--bgc-grey">
         <h2 class="layout__title">Наша команда</h2>
         <ul class="cards">
-          <li class="cards__item cards__item--four-in-line">
+          <li class="cards__item">
             <div class="person">
               <div class="wrap">
                 <img src="./images/photo/person1.jpg" alt="Николай Кучеренко" class="img">
@@ -169,7 +171,7 @@
               </div>
             </div>
           </li>
-          <li class="cards__item cards__item--four-in-line">
+          <li class="cards__item">
             <div class="person">
               <div class="wrap">
                 <img src="./images/photo/person2.jpg" alt="Ольга Иванова" class="img">
@@ -211,7 +213,7 @@
               </div>
             </div>
           </li>
-          <li class="cards__item cards__item--four-in-line">
+          <li class="cards__item">
             <div class="person">
               <div class="wrap">
                 <img src="./images/photo/person3.jpg" alt="Андрей Шевченко" class="img">
@@ -253,7 +255,7 @@
               </div>
             </div>
           </li>
-          <li class="cards__item cards__item--four-in-line">
+          <li class="cards__item">
             <div class="person">
               <div class="wrap">
                 <img src="./images/photo/person4.jpg" alt="Иван Николаев" class="img">
@@ -302,43 +304,43 @@
     <section class="layout__section">
       <div class="container">
         <h2 class="layout__title">Постоянные клиенты</h2>
-        <ul class="cards">
-          <li class="cards__item cards__item--six-in-line">
+        <ul class="cards cards--flex">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="45px" height="50px">
                 <use href="./images/logo-client/symbol-defs.svg#logo1"></use>
               </svg>
             </a>
           </li>
-          <li class="cards__item cards__item--six-in-line">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="40px" height="52px">
                 <use href="./images/logo-client/symbol-defs.svg#logo2"></use>
               </svg>
             </a>
           </li>
-          <li class="cards__item cards__item--six-in-line">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="41px" height="43px">
                 <use href="./images/logo-client/symbol-defs.svg#logo3"></use>
               </svg>
             </a>
           </li>
-          <li class="cards__item cards__item--six-in-line">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="80px" height="42px">
                 <use href="./images/logo-client/symbol-defs.svg#logo4"></use>
               </svg>
             </a>
           </li>
-          <li class="cards__item cards__item--six-in-line">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="59px" height="47px">
                 <use href="./images/logo-client/symbol-defs.svg#logo5"></use>
               </svg>
             </a>
           </li>
-          <li class="cards__item cards__item--six-in-line">
+          <li class="cards__item client">
             <a href="" class="client__link">
               <svg class="client__icom" width="89px" height="46px">
                 <use href="./images/logo-client/symbol-defs.svg#logo6"></use>
@@ -358,7 +360,6 @@
         <li class="page-footer__item">
 
           <a href="./index.html" class="logo page-footer__logo">
-            <!-- <img src="" alt="Web Studio" role="presentation"> -->
             <span class="logo__text">Web</span> Studio
           </a>
           <address class="address">
@@ -380,9 +381,8 @@
           </address>
         </li>
 
-        <li class="page-footer__item footer__item--social">
+        <li class="page-footer__item">
           <p class="page-footer__title">присоединяйтесь</p>
-          <!-- social -->
           <ul class="social page-footer__social">
             <li class="social__item">
               <a class="social__link" href="" aria-label="instagram link">
@@ -419,7 +419,7 @@
           <p class="page-footer__title">Подпишитесь на рассылку</p>
           <form class="page-footer__form">
             <input type="email" class="page-footer__input" name="mail" id="mail" placeholder="E-mail">
-            <button class="button button--icon" type="submit">Подписаться</button>
+            <button class="button button__icon" type="submit">Подписаться</button>
           </form>
 
         </li>
@@ -482,6 +482,7 @@
 
 
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   <script>
     const { height: pageHeaderHeigth } = document
       .querySelector(".header")

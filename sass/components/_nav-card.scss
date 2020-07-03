@@ -1,15 +1,22 @@
 .nav-card {
   display: flex;
-  justify-content: center;
-  margin-left: -4px;
-  margin-right: -4px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: -4px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   &__link {
     display: inline-block;
     height: 38px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin: 4px;
     padding: 6px 22px;
 
     border: none;

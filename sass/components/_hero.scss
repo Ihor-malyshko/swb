@@ -23,8 +23,14 @@
     margin-bottom: $tab-size * 2;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+
     color: $primary-color;
   }
 }

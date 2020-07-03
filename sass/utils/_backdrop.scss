@@ -12,6 +12,8 @@
   transition: opacity 250ms $timing-function;
   opacity: 1;
 
+  overflow-y: scroll;
+
   &.is-hidden {
     pointer-events: none;
     /* visibility: hidden; */

@@ -22,6 +22,7 @@ ul {
 }
 
 body {
+  min-width: 480px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -31,4 +32,8 @@ body {
   color: $primary-text-color;
 
   background-color: $primary-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }

@@ -5,8 +5,14 @@
     padding-bottom: 94px;
   }
 
-  &__section--no-gap-bottom {
-    padding-bottom: 0;
+  &__section--no-gap-top {
+    padding-top: 0;
+  }
+
+  &__section--only-desktop {
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
 
   &__section--bgc-grey {

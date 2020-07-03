@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
 
 @import "./utils/backdrop";
 @import "./utils/base";
@@ -22,6 +23,7 @@
 @import "./components/layout";
 @import "./components/logo";
 @import "./components/main-nav";
+@import "./components/menu";
 @import "./components/modal";
 @import "./components/nav-card";
 @import "./components/page-footer";

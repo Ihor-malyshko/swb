@@ -18,13 +18,14 @@
   border-radius: 4px;
 }
 
-.button--icon::after {
+.button__icon::after {
   content: "";
 
   display: inline-block;
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  vertical-align: middle;
 
   background-repeat: no-repeat;
   background-position: center;

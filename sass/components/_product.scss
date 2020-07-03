@@ -1,5 +1,9 @@
 /* product */
 .product {
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 3);
+  }
+
   &__link {
     display: block;
     border: 1px solid #eeeeee;
