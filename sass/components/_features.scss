@@ -1,7 +1,11 @@
 /* Features */
 
 .features {
-  &__icon::before {
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+  &::before {
     content: "";
     display: block;
     height: 120px;
@@ -13,16 +17,16 @@
     border-radius: 4px;
   }
 
-  &__icon--antenna::before {
+  &--antenna::before {
     background-image: url(../images/antenna.svg);
   }
-  &__icon--clock::before {
+  &--clock::before {
     background-image: url(../images/clock.svg);
   }
-  &__icon--diagram::before {
+  &--diagram::before {
     background-image: url(../images/diagram.svg);
   }
-  &__icon--astronaut::before {
+  &--astronaut::before {
     background-image: url(../images/astronaut.svg);
   }
 

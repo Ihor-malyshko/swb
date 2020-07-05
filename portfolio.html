@@ -22,43 +22,45 @@
         <!-- <img src="" alt="Web Studio" role="presentation"> -->
         <span class="logo__text">Web</span> Studio
       </a>
-      <ul class="header__list">
-        <li class="header__item">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link nav__link--accent">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a href="./test/test.html" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </li>
-        <li class="header__item">
-          <ul class="contact__list header__contact">
-            <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon">
-                  <use href="./images/symbol-defs.svg#envelope"> </use>
-                </svg>
-                info@devstudio.com
-              </a>
+      <button type="button" class="menu__button" data-menu-button>
+        <svg width="40" height="40">
+          <use class="icon__cross" href="./images/symbol-defs.svg#cross"> </use>
+          <use class="icon__menu" href="./images/symbol-defs.svg#menu"> </use>
+        </svg>
+      </button>
+      <div class="menu" data-menu>
+        <nav class="menu__item nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студия</a>
             </li>
-            <li class="contact__item">
-              <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon">
-                  <use href="./images/symbol-defs.svg#smartphone"> </use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--accent">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="./test/test.html" class="nav__link">Контакты</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </nav>
+        <ul class="menu__item contact__list">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#envelope"> </use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon">
+                <use href="./images/symbol-defs.svg#smartphone"> </use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -97,7 +99,7 @@
         <ul class="cards">
           <li class="cards__item product">
             <a href="#" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example1.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -113,7 +115,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example2.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab neque dolores
@@ -132,7 +134,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example3.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -146,7 +148,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example4.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -160,7 +162,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example5.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -174,7 +176,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example6.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -188,7 +190,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example7.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -202,7 +204,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example8.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -216,7 +218,7 @@
           </li>
           <li class="cards__item product">
             <a href="" class="product__link">
-              <div class="wrap">
+              <div class="wrap product__wrap">
                 <img src="./images/examples-portfolio/example9.jpg" alt="" class="img">
                 <div class="product__contains">
                   <p class="product__text">Lorem ipsum dolor sit amet.</p>
@@ -237,80 +239,79 @@
 
   <footer class="page-footer">
     <div class="container">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
+      <div class="page-footer__wrap">
+        <div class="page-footer__list">
+          <div class="page-footer__item">
 
-          <a href="./index.html" class="logo page-footer__logo">
-            <!-- <img src="" alt="Web Studio" role="presentation"> -->
-            <span class="logo__text">Web</span> Studio
-          </a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-              </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link">
-                  info@devstudio.com
+            <a href="./index.html" class="logo page-footer__logo">
+              <span class="logo__text">Web</span> Studio
+            </a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link">
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="page-footer__item">
+            <p class="page-footer__title">присоединяйтесь</p>
+            <ul class="social page-footer__social">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="instagram link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link">
-                  +38 096 111 11 11
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="twitter link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="facebook link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="linkedin link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
-        </li>
-
-        <li class="page-footer__item footer__item--social">
-          <p class="page-footer__title">присоединяйтесь</p>
-          <!-- social -->
-          <ul class="social page-footer__social">
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="instagram link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="twitter link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="facebook link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="linkedin link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="page-footer__item">
+          </div>
+        </div>
+        <div class="page-footer__item page-footer__item--flex">
           <p class="page-footer__title">Подпишитесь на рассылку</p>
           <form class="page-footer__form">
             <input type="email" class="page-footer__input" name="mail" id="mail" placeholder="E-mail">
             <button class="button button__icon" type="submit">Подписаться</button>
           </form>
+        </div>
+      </div>
 
-        </li>
-      </ul>
     </div>
   </footer>
 
-
+  <script src="./js/menu.js"></script>
   <script>
     const { height: pageHeaderHeigth } = document
       .querySelector(".header")

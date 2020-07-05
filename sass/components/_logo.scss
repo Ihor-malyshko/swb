@@ -12,8 +12,8 @@
     text-align: start;
   }
 
-  @media screen and (max-width: $tablet) {
-    padding: 16px;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    padding: 16px 0;
   }
 
   &__text {

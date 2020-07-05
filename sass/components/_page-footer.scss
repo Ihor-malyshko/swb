@@ -16,7 +16,7 @@
   &__list {
     display: flex;
     // flex-wrap: wrap;
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
       flex-direction: column;
     }
     justify-content: space-between;
@@ -58,9 +58,9 @@
     color: $primary-color;
   }
 
-  &__social-list {
-    width: 206px;
-  }
+  // &__social-list {
+  //   width: 206px;
+  // }
 
   &__social .social__link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -89,7 +89,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
 
     @media screen and (min-width: $desktop) {
       width: 350px;

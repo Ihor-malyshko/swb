@@ -18,6 +18,10 @@
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
 
+  &__wrap {
+    height: 294px;
+  }
+
   &__contains {
     display: flex;
     /* align-items: center; */

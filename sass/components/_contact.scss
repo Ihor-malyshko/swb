@@ -1,14 +1,13 @@
 .contact {
-  &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
     align-items: center;
+  }
 
-    @media screen and (min-width: $desktop) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   &__item:not(:last-child) {

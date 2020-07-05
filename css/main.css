@@ -48,7 +48,7 @@ ul {
 }
 
 body {
-  min-width: 480px;
+  min-width: 320px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -241,7 +241,7 @@ body.modal-open {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: calc(1200px - 1px)) {
   .checkbox__label::before {
     left: 0;
   }
@@ -259,7 +259,7 @@ body.modal-open {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: calc(1200px - 1px)) {
   .checkbox__label {
     font-size: 12px;
     line-height: 1.16;
@@ -312,7 +312,7 @@ body.modal-open {
   fill: inherit;
 }
 
-.contact__list {
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,16 +320,18 @@ body.modal-open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (max-width: calc(768px - 1px)) {
+  .contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__list {
+  .contact {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -398,7 +400,17 @@ body.modal-open {
 }
 
 /* Features */
-.features__icon::before {
+.features {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    text-align: start;
+  }
+}
+
+.features::before {
   content: "";
   display: block;
   height: 120px;
@@ -409,19 +421,19 @@ body.modal-open {
   border-radius: 4px;
 }
 
-.features__icon--antenna::before {
+.features--antenna::before {
   background-image: url(../images/antenna.svg);
 }
 
-.features__icon--clock::before {
+.features--clock::before {
   background-image: url(../images/clock.svg);
 }
 
-.features__icon--diagram::before {
+.features--diagram::before {
   background-image: url(../images/diagram.svg);
 }
 
-.features__icon--astronaut::before {
+.features--astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
 
@@ -565,8 +577,8 @@ body.modal-open {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_img.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img.jpg);
   background-repeat: no-repeat;
@@ -574,6 +586,13 @@ body.modal-open {
   background-size: cover;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -601,7 +620,7 @@ body.modal-open {
   padding-top: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: calc(1200px - 1px)) {
   .layout__section--only-desktop {
     display: none;
   }
@@ -639,9 +658,9 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: calc(768px - 1px)) {
   .logo {
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 
@@ -755,8 +774,8 @@ body.modal-open {
   display: block;
 }
 
-.menu__button .icon__menu:hover,
-.menu__button .icon__menu:focus {
+.menu__button:hover .icon__menu,
+.menu__button:focus .icon__menu {
   fill: #2196f3;
 }
 
@@ -765,14 +784,13 @@ body.modal-open {
   display: none;
 }
 
-.menu__button .icon__cross:hover,
-.menu__button .icon__cross:focus {
+.menu__button:hover .icon__cross,
+.menu__button:focus .icon__cross {
   fill: #2196f3;
 }
 
 .menu__button.is-open .icon__cross {
   display: block;
-  fill: #212121;
 }
 
 .menu__button.is-open .icon__menu {
@@ -808,7 +826,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: calc(768px - 1px)) {
   .menu {
     display: none;
     position: absolute;
@@ -984,7 +1002,7 @@ body.modal-open {
   margin: -30px auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: calc(768px - 1px)) {
   .page-footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1037,10 +1055,6 @@ body.modal-open {
   }
 }
 
-.page-footer__social-list {
-  width: 206px;
-}
-
 .page-footer__social .social__link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
@@ -1080,7 +1094,8 @@ body.modal-open {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1101,6 +1116,16 @@ body.modal-open {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+.person__wrap {
+  height: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .person__wrap {
+    height: 260px;
+  }
 }
 
 .person__container {
@@ -1141,6 +1166,10 @@ body.modal-open {
 .product__link:hover, .product__link:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.product__wrap {
+  height: 294px;
 }
 
 .product__contains {
@@ -1243,6 +1272,7 @@ body.modal-open {
 
 .social__icon {
   width: 50%;
+  height: 50%;
   fill: inherit;
 }
 /*# sourceMappingURL=main.css.map */

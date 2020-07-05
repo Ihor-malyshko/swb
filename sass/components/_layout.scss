@@ -10,7 +10,7 @@
   }
 
   &__section--only-desktop {
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: calc(#{$desktop} - 1px)) {
       display: none;
     }
   }
