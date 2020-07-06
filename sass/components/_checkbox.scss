@@ -20,7 +20,7 @@
   }
 
   &:checked + &__label::before {
-    background-image: url(../images/icon-check.svg);
+    background-image: url(../images/svg/icon-check.svg);
     background-color: $accent-color;
     background-origin: border-box;
     border-color: transparent;

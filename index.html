@@ -19,13 +19,12 @@
   <header class="header">
     <div class="container header__items">
       <a href="./index.html" class="logo header__logo">
-        <!-- <img src="" alt="Web Studio" role="presentation"> -->
         <span class="logo__text">Web</span> Studio
       </a>
       <button type="button" class="menu__button" data-menu-button>
         <svg width="40" height="40">
-          <use class="icon__cross" href="./images/symbol-defs.svg#cross"> </use>
-          <use class="icon__menu" href="./images/symbol-defs.svg#menu"> </use>
+          <use class="icon__cross" href="./images/svg/symbol-defs.svg#cross"> </use>
+          <use class="icon__menu" href="./images/svg/symbol-defs.svg#menu"> </use>
         </svg>
       </button>
       <div class="menu" data-menu>
@@ -46,7 +45,7 @@
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__icon">
-                <use href="./images/symbol-defs.svg#envelope"> </use>
+                <use href="./images/svg/symbol-defs.svg#envelope"> </use>
               </svg>
               info@devstudio.com
             </a>
@@ -54,7 +53,7 @@
           <li class="contact__item">
             <a href="tel:+380961111111" class="contact__link">
               <svg class="contact__icon">
-                <use href="./images/symbol-defs.svg#smartphone"> </use>
+                <use href="./images/svg/symbol-defs.svg#smartphone"> </use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -105,19 +104,22 @@
         <ul class="cards">
           <li class="cards__item cards__item--three">
             <div class="wrap">
-              <img src="./images/img_box1.jpg" alt="Десктопные приложения" class="img">
+              <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg"
+                alt="Десктопные приложения" class="img">
               <h3 class="wrap__title">Десктопные приложения</h3>
             </div>
           </li>
           <li class="cards__item cards__item--three">
             <div class="wrap">
-              <img src="./images/img_box2.jpg" alt="Мобильные приложения" class="img">
+              <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg"
+                alt="Мобильные приложения" class="img">
               <h3 class="wrap__title">Мобильные приложения</h3>
             </div>
           </li>
           <li class="cards__item cards__item--three">
             <div class="wrap">
-              <img src="./images/img_box3.jpg" alt="Дизайнерские решения" class="img">
+              <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg"
+                alt="Дизайнерские решения" class="img">
               <h3 class="wrap__title">Дизайнерские решения</h3>
             </div>
           </li>
@@ -132,7 +134,20 @@
           <li class="cards__item">
             <div class="person">
               <div class="wrap person__wrap">
-                <img src="./images/photo/person1.jpg" alt="Николай Кучеренко" class="img">
+                <img srcset="./images/photo/person1.jpg 1x, ./images/photo/person1@2x.jpg 2x"
+                  src="./images/photo/person1.jpg" alt="Николай Кучеренко" class="img">
+                <!-- <picture>
+                  <source srcset="./images/photo/person1-450.webp x1, ./images/photo/person1-450@2x.webp x2"
+                    type="image/webp" media="(max-width: 767px)" />
+                  <source srcset="./images/photo/person1-354.webp x1, ./images/photo/person1-354@2x.webp x2"
+                    type="image/webp" media="(min-width: 768px)" />
+                  <source srcset="./images/photo/person1-270.webp x1, ./images/photo/person1-270@2x.webp x2"
+                    type="image/webp" media="(max-width: 1200px)" />
+                  <img
+                    srcset="./images/photo/person1-270.jpg 270w, ./images/photo/person1-354.jpg 354w, ./images/photo/person1-450.jpg 450w"
+                    src="./images/photo/p1.jpg" alt="Николай Кучеренко"
+                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, (max-width: 480) 100vw" class="img">
+                </picture> -->
               </div>
               <div class="person__container">
                 <h3 class="person__title">Николай Кучеренко</h3>
@@ -142,28 +157,28 @@
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="instagram link">
                       <svg class="social__icon">
-                        <use xlink:href="./images/symbol-defs.svg#instagram"></use>
+                        <use xlink:href="./images/svg/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="twitter link">
                       <svg class="social__icon">
-                        <use xlink:href="./images/symbol-defs.svg#twitter"></use>
+                        <use xlink:href="./images/svg/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="facebook link">
                       <svg class="social__icon">
-                        <use xlink:href="./images/symbol-defs.svg#facebook"></use>
+                        <use xlink:href="./images/svg/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="linkedin link">
                       <svg class="social__icon">
-                        <use xlink:href="./images/symbol-defs.svg#linkedin"></use>
+                        <use xlink:href="./images/svg/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -174,7 +189,8 @@
           <li class="cards__item">
             <div class="person">
               <div class="wrap person__wrap">
-                <img src="./images/photo/person2.jpg" alt="Ольга Иванова" class="img">
+                <img srcset="./images/photo/person2.jpg 1x, ./images/photo/person2@2x.jpg 2x"
+                  src="./images/photo/person2.jpg" alt="Ольга Иванова" class="img">
               </div>
               <div class="person__container">
                 <h3 class="person__title">Ольга Иванова</h3>
@@ -184,28 +200,28 @@
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="instagram link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#instagram"></use>
+                        <use href="./images/svg/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="twitter link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#twitter"></use>
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="facebook link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#facebook"></use>
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="linkedin link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                        <use href="./images/svg/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -216,7 +232,8 @@
           <li class="cards__item">
             <div class="person">
               <div class="wrap person__wrap">
-                <img src="./images/photo/person3.jpg" alt="Андрей Шевченко" class="img">
+                <img srcset="./images/photo/person3.jpg 1x, ./images/photo/person3@2x.jpg 2x"
+                  src="./images/photo/person3.jpg" alt="Ольга Иванова" class="img">
               </div>
               <div class="person__container">
                 <h3 class="person__title">Андрей Шевченко</h3>
@@ -226,28 +243,28 @@
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="instagram link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#instagram"></use>
+                        <use href="./images/svg/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="twitter link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#twitter"></use>
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="facebook link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#facebook"></use>
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="linkedin link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                        <use href="./images/svg/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -258,7 +275,8 @@
           <li class="cards__item">
             <div class="person">
               <div class="wrap person__wrap">
-                <img src="./images/photo/person4.jpg" alt="Иван Николаев" class="img">
+                <img srcset="./images/photo/person4.jpg 1x, ./images/photo/person4@2x.jpg 2x"
+                  src="./images/photo/person4.jpg" alt="Иван Николаев" class="img">
               </div>
               <div class="person__container">
                 <h3 class="person__title">Иван Николаев</h3>
@@ -268,28 +286,28 @@
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="instagram link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#instagram"></use>
+                        <use href="./images/svg/symbol-defs.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="twitter link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#twitter"></use>
+                        <use href="./images/svg/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="facebook link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#facebook"></use>
+                        <use href="./images/svg/symbol-defs.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" aria-label="linkedin link">
                       <svg class="social__icon">
-                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                        <use href="./images/svg/symbol-defs.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -388,28 +406,28 @@
               <li class="social__item">
                 <a class="social__link" href="" aria-label="instagram link">
                   <svg class="social__icon">
-                    <use href="./images/symbol-defs.svg#instagram"></use>
+                    <use href="./images/svg/symbol-defs.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="" aria-label="twitter link">
                   <svg class="social__icon">
-                    <use href="./images/symbol-defs.svg#twitter"></use>
+                    <use href="./images/svg/symbol-defs.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="" aria-label="facebook link">
                   <svg class="social__icon">
-                    <use href="./images/symbol-defs.svg#facebook"></use>
+                    <use href="./images/svg/symbol-defs.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="" aria-label="linkedin link">
                   <svg class="social__icon">
-                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                    <use href="./images/svg/symbol-defs.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -433,7 +451,7 @@
     <div class="modal">
       <button class="button-close" data-modal-close>
         <svg class="button-close__icon">
-          <use href="./images/symbol-defs.svg#close"></use>
+          <use href="./images/svg/symbol-defs.svg#close"></use>
         </svg>
       </button>
       <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
@@ -443,7 +461,7 @@
           <input type="text" class="form__input" name="name" id="name" placeholder=" " />
           <label for="name" class="form__label">Имя</label>
           <svg class="form__icon">
-            <use href="./images/symbol-defs.svg#name"></use>
+            <use href="./images/svg/symbol-defs.svg#name"></use>
           </svg>
         </div>
 
@@ -451,7 +469,7 @@
           <input type="tel" class="form__input" name="tel" id="tel" placeholder=" " />
           <label for="tel" class="form__label">Телефон</label>
           <svg class="form__icon">
-            <use href="./images/symbol-defs.svg#tel"></use>
+            <use href="./images/svg/symbol-defs.svg#tel"></use>
           </svg>
         </div>
 
@@ -459,7 +477,7 @@
           <input type="email" class="form__input" name="mail" id="mail" placeholder=" " />
           <label for="mail" class="form__label">Почта</label>
           <svg class="form__icon form__icon--width">
-            <use href="./images/symbol-defs.svg#mail"></use>
+            <use href="./images/svg/symbol-defs.svg#mail"></use>
           </svg>
         </div>
 
